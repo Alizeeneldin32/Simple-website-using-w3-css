@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<title>AZ Arch</title>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset= UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css.css">
+<link rel="stylesheet" href="CSS1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+<!-- Navigation -->
+<div class="w3-top w3-bar w3-dark-gray w3-wide w3-padding w3-card">
+
+  <div>
+    <a href="Project.html" class="w3-bar-item w3-button"><img src="logo.jpg" style="width:50px; height:50px;"></img> <b> AZ</b> Architecture</a>
+
+    <!-- links on right-->
+    <div class="w3-right w3-hide-small">
+	  <a href="Project.html" class="w3-bar-item w3-button">News</a>
+	  <a href="Project.html" class="w3-bar-item w3-button">Arch</a>
+      <a href="Project.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="Project.html" class="w3-bar-item w3-button">About</a>
+      <a href="Project.html" class="w3-bar-item w3-button">Contact</a>
+	  	<input id="search_item" type="search" name="search" placeholder="Search" autocomplete="on" class="w3-bar-item">
+	<i id='search_btn' class="w3-button fa fa-search w3-bar-item"></i>
+    </div>
+		</div>
+  <!--Sign in-->
+  <div class="w3-bar">
+	<a href= "Register.html" class="w3-bar-item w3-button  w3-right ">Register </a>
+	<a href= "Sign_in.html" class="w3-bar-item w3-button  w3-right">Sign In</a>
+
+  </div>
+</div>
+<div class="w3-content w3-padding" style="max-width:1564px">
+<div class="w3-container w3-padding-64" style="height:722px;">
+ </br>
+ </br>
+ </br>
+ <h2 class="w3-center"> <b> Log into AZ Architecture </b></h2>
+ </br>
+ </br>
+ </br>
+<form class="w3-center"> <!--style=" border-style:solid; border-width:2px; border-radius:25px;"-->
+</br>
+<input class="w3-input w3-border w3-padding-16" id="username" type="text" placeholder="Username/Email" required required name="Username">
+<input class="w3-input w3-border w3-padding-16" type="password" placeholder="Password" required required name="Password">
+<input type="submit" id="log_in" class="w3-button w3-block w3-black w3-section w3-ripple w3-padding-16" value="Log In">
+</form>
+<p style=" border-bottom: 3px solid lightgrey;" class="w3-center"></p>
+<p class="w3-center">Or</p>
+</br>
+<button id="register" class="w3-button w3-block w3-black  w3-ripple w3-padding-16">Register</button>
+</div>
+
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16" >
+  <p class="w3-hover-text-red">©2016 AZ architects</a></p>
+</footer>
+
+<script>
+document.getElementById("log_in").onclick=function(){
+			
+			alert("Welcome " +document.getElementById("username").value);
+			window.location.assign('file:///D:/Ali/AAST/Semester%205/Web%20Programming/Project/Project.html');
+		}
+document.getElementById("register").onclick=function(){
+window.location.assign("Register.html");
+}
+document.getElementById("search_btn").onclick=function(){
+		
+			alert("You searched for " +document.getElementById("search_item").value);
+		}
+</script>
+</body>
+</html>
